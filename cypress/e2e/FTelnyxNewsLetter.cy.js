@@ -1,5 +1,5 @@
-describe('Login', () => {
-  it('Login', () => {
+describe('Subscribes to the Newsletter', () => {
+  it('Subscribes to the Newsletter', () => {
     
     // cy.intercept('**/*.css', { statusCode: 200, body: '' });
     // cy.intercept('**/*.js', { statusCode: 200, body: '' });

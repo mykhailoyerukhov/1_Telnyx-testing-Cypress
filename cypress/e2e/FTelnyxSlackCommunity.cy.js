@@ -1,5 +1,5 @@
-describe('Login', () => {
-  it('Login', () => {
+describe('Logins to Slack community', () => {
+  it('Logins to Slack community', () => {
     
     cy.visit('https://telnyx.com/')
     cy.wait(2000)
@@ -8,7 +8,7 @@ describe('Login', () => {
     cy.get('[id^="radix-"][id$=":R356jm:"]').invoke('attr', 'target', '_self').click()
     cy.wait(1000)
 
-    cy.get('[data-href="https://joinslack.telnyx.com/"]').click()
+    cy.get('[data-href="https://joinslack.telnyx.com/"]').invoke('attr', 'target', '_self').click()
     cy.pause()
   })
 })

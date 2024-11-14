@@ -1,5 +1,5 @@
-describe('Login', () => {
-  it('Login', () => {
+describe('Check various options of the coverage map', () => {
+  it('Check various options of the coverage map', () => {
     
     cy.visit('https://telnyx.com/')
 

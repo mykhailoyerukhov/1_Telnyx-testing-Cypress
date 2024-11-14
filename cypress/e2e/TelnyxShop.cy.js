@@ -1,5 +1,5 @@
-describe('Login', () => {
-  it('Login', () => {
+describe('Picks commodities and fills the form to pay', () => {
+  it('Picks commodities and fills the form to pay', () => {
     
     cy.visit('https://telnyx.com/')
     cy.wait(2000)
@@ -36,11 +36,7 @@ describe('Login', () => {
     //can't imput payment numbers
     // cy.get('[id="number"][data-card-fields="number"]').type('4441111321344513')
 
-
-
-
-
-
+    cy.get('#checkout-pay-button').should('be.visible').and('not.be.disabled');
 
   })
 })
