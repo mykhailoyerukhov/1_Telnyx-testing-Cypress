@@ -4,13 +4,21 @@ describe('Subscribes to the Newsletter', () => {
     // cy.intercept('**/*.css', { statusCode: 200, body: '' });
     // cy.intercept('**/*.js', { statusCode: 200, body: '' });
 
-    cy.visit('https://developers.telnyx.com/', {
-       waitUntil: 'domcontentloaded'
-    })
+    cy.visit('https://developers.telnyx.com/')
+    cy.viewport(1280, 720)
 
-    cy.wait(10000)
+    cy.wait(1000)
 
+    cy.get('.footer_bfO1').scrollIntoView()
     cy.get('#Email').type('Fakefakefake@fakefakefake.com')
+    cy.wait(1000)
+    cy.get('button.mktoButton').click()
+    cy.wait(1500)
+
+    cy.get('.formArea_sIUT').should('have.text', 'Thank you, you have successfully subscribed to our newsletter!')
+    // Thank you, you have successfully subscribed to our newsletter!
+
+
     // Зайти с главной страницы на developers.
     // cy.visit('https://telnyx.com/')
     // cy.wait(2000)
