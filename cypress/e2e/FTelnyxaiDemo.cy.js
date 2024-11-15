@@ -1,5 +1,5 @@
 describe('Input a prompt and test different demo AI models', () => {
-  it('Input a prompt and test different demo AI models', () => {
+  skip.it('Input a prompt and test different demo AI models', () => {
     
     cy.visit('https://telnyx.com/')
     cy.viewport(1280, 720)

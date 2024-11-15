@@ -1,4 +1,4 @@
-describe('Open different articles, check their visibility', () => {
+describe('Opens different articles, checks their visibility', () => {
   it('Open different articles, check their visibility', () => {
     
     cy.visit('https://telnyx.com/')
