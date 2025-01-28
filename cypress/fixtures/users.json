@@ -1,0 +1,30 @@
+{
+  "valid_credentials": {
+    "email": "correct_email@company.com",
+    "password": "N1ceWorkIngPassword!@#",
+    "first_name": "Gabe",
+    "last_name": "Newell"
+  },
+  "invalid_credentials": {
+    "invalid_email": {
+      "email": "somebunchof@personalemail.com",
+      "password": "N1ceWorkIngPassword!@#"
+    },
+    "password_short": {
+      "email": "goodemail@company.com",
+      "password": "short"
+    },
+    "wrong_email_format": {
+      "email": "bademailcompany.com",
+      "password": "N1ceWorkIngPassword!@#"
+    },
+    "password_no_numbers": {
+      "email": "goodemail123@company.com",
+      "password": "onlyletters"
+    },
+    "password_no_specials": {
+      "email": "goodemail123@company.com",
+      "password": "almost123good"
+    }
+  }
+}

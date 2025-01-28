@@ -4,5 +4,8 @@
   },
   "scripts": {
     "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }

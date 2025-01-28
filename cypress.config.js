@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
     
   },
-  projectId: "ayv8mh",
+  projectId: "x98u6f",
 });
 
 //npx cypress run --record --key aae97afd-d04c-4bb8-bedb-c1e29251dc90

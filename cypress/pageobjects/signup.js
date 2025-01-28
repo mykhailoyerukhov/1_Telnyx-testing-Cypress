@@ -1,5 +1,5 @@
 class SignUp {
-    visit() {
+    visitSignupPage() {
         cy.visit('https://telnyx.com/sign-up')
     }
     getUserNameField() {
@@ -23,7 +23,7 @@ class SignUp {
     getSignUpButtonField() {
         return cy.get('button[type="submit"]').eq(0)
     }
-    signUp(username, firstname, lastname, password) {
+    fillDataAndClickSignup(username, firstname, lastname, password) {
         this.getUserNameField().type(username);
         this.getFirstNameField().type(firstname);
         this.getLastNameField().type(lastname);

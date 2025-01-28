@@ -8,3 +8,5 @@ node_modules/
 # Игнорируем другие файлы, которые не должны быть в репозитории
 .DS_Store
 .env
+Telnyx-test-plan.xlsx
+~$Telnyx-test-plan.xlsx
