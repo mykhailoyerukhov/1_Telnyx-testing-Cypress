@@ -1,9 +1,18 @@
 {
   "valid_credentials": {
-    "email": "correct_email@company.com",
-    "password": "N1ceWorkIngPassword!@#",
-    "first_name": "Gabe",
-    "last_name": "Newell"
+    "valid_cred": {
+      "email": "correct_email@company.com",
+      "password": "N1ceWorkIngPassword!@#",
+      "first_name": "Gabe",
+      "last_name": "Newell"
+    },
+    "forCallback": {
+    "company_name": "RandomCompany",
+    "company_domain": "randomcompany123.com",
+    "phone_number": "+380501234567",
+    "email": "ezemail123@mail.com"
+    }
+
   },
   "invalid_credentials": {
     "invalid_email": {
@@ -25,6 +34,12 @@
     "password_no_specials": {
       "email": "goodemail123@company.com",
       "password": "almost123good"
+    },
+    "forCallback_invalid": {
+    "company_name": "1234cmpn",
+    "company_domain": "random123",
+    "phone_number": "notnumbers",
+    "email": "ezclap"
     }
   }
 }

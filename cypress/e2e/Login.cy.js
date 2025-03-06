@@ -10,7 +10,7 @@ describe('Login', () => {
     cy.viewport(1280, 720);
   });
 
-  it.skip('logging in with valid credentials', function() {
+  it('logging in with valid credentials', function() {
     LoginPage.fillUserdataAndClickLogin(this.fixture.valid_credentials.email, this.fixture.valid_credentials.password)
 
     // here should be login url of a login page, but I couldn't log into Telnyx's system
@@ -18,14 +18,14 @@ describe('Login', () => {
 
   });
 
-  it.skip('login with empty data', function() {
+  it('login with empty data', function() {
     LoginPage.clickLogin()
     cy.wait(3000)
     LoginPage.clickLogin()
     cy.get('.MuiFormHelperText-root.Mui-error.MuiFormHelperText-sizeMedium.MuiFormHelperText-contained.frontend-customer-portal-ehawra').should('be.visible')
   });
 
-  it.skip('login with invalid credentials', function() {
+  it('login with invalid credentials', function() {
     LoginPage.fillUserdataAndClickLogin(this.fixture.invalid_credentials.invalid_email.email, this.fixture.invalid_credentials.password_no_specials.password)
 
     cy.get('.MuiAlert-message.frontend-customer-portal-1xsto0d').should('be.visible')
